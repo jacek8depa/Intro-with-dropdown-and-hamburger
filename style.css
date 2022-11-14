@@ -1,0 +1,532 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 35px 45px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 98%);
+    height: 100%;
+
+
+}
+
+#tlo {
+    display: none;
+    background-color: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+}
+
+a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    right: 30px;
+    top: 40px;
+    box-shadow: 0px 0px 100px -61px rgba(66, 68, 90, 1);
+
+
+}
+
+
+.dropdown-menu li {
+    padding-top: 20px;
+}
+
+.dropdown-menu li img {
+    padding-right: 15px;
+}
+
+.dropdown-menu li:first-child {
+    padding: 0;
+}
+
+#logo {
+    position: absolute;
+
+}
+
+#hamburger {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    display: none;
+    z-index: 102;
+}
+
+#przycisk {
+    display: none;
+}
+
+#iks {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    display: none;
+    z-index: 102;
+}
+
+#register {
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-left: 40px;
+
+}
+
+.rejestr {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.icon-arrow {
+    margin-left: 10px;
+}
+
+icon-arrow img {
+    transition: all 0.4s ease;
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.icon-arrow img {
+    transition: all 0.2s ease;
+}
+
+
+.dropdown:hover .icon-arrow img {
+    transform: rotate(180deg);
+
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 130px;
+    transition: transform 0.2s;
+}
+
+#menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+
+.dropdown-toggle {
+    padding-right: calc(8px + 1.5625vw);
+}
+
+.dropdown {
+    position: relative;
+    padding-bottom: 40px;
+
+
+}
+
+section {
+    margin-top: 2vw;
+    display: flex;
+
+}
+
+#hero {
+    width: 50vw;
+    padding: 2vw;
+}
+
+#duzy {
+    width: auto;
+    height: 70vh;
+}
+
+#maly {
+    display: none;
+}
+
+
+
+article {
+    margin: 7vw;
+    width: 50vw;
+    display: block;
+}
+
+h1 {
+    font-size: 7em;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 3em 0;
+    padding-right: 4em;
+    font-weight: 600;
+    max-width: 400px;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5;
+
+}
+
+#learn {
+    box-sizing: border-box;
+    all: unset;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 100%;
+    text-decoration: none;
+    padding: 15px 12px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid hsl(0, 0%, 98%);
+
+
+
+}
+
+#learn:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+#sponsors {
+    margin: 8vh 0;
+}
+
+#sponsors img {
+    padding-right: 3vw;
+}
+
+
+
+
+@media (max-width: 375px) {
+    body {
+        margin-left: 15px;
+        margin-top: 25px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+
+
+    #menu-container {
+        flex-direction: column;
+    }
+
+    #przycisk {
+        display: block;
+    }
+
+
+
+    .rejestr {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .rejestr div {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .rejestr div a {
+        text-align: center;
+    }
+
+    #register {
+        margin: 0;
+        padding: 10px 40px;
+        margin-top: 20px;
+    }
+
+
+    .nav-container {
+        flex-direction: column;
+
+        position: absolute;
+        background-color: hsl(0, 0%, 98%);
+        width: 230px;
+        right: 0;
+        top: 0;
+        padding-left: 20px;
+        padding-top: 80px;
+        height: 100%;
+        z-index: 101;
+        justify-content: unset;
+
+    }
+
+
+
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .dropdown-toggle {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+        padding: 0px;
+        right: 0px;
+        top: 0px;
+        box-shadow: none;
+        position: relative;
+        margin-left: 40px;
+        margin-bottom: 15px;
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    .toggle {
+        position: absolute;
+        transform: translateX(140%);
+
+    }
+
+    section {
+        flex-direction: column-reverse;
+
+    }
+
+    #duzy {
+        display: none;
+    }
+
+    #maly {
+        display: block;
+        width: 100vw;
+        height: auto;
+        position: abso;
+        margin: 80px 0;
+        padding: 0;
+
+
+
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #logo {
+        left: 20px;
+        top: 30px;
+    }
+
+    #hero {
+        margin: 0;
+        padding: 0;
+    }
+
+    article {
+        width: 100vw;
+        margin: 0;
+    }
+
+
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.15em;
+        text-align: center;
+        padding: 0;
+        margin: 2em 0.1em;
+    }
+
+    #learn {
+        display: block;
+        margin: auto;
+
+
+    }
+
+    #sponsors {
+        margin: auto;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+        margin: 40px 0;
+
+    }
+
+    #sponsors img {
+        width: 18%;
+        height: auto;
+        padding: 2vw;
+        margin: auto;
+
+    }
+
+}

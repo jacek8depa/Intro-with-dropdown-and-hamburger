@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tlo"></div>
+  <img id="logo" src="logo.svg" alt="">
+  <nav id="nav" class="nav-container toggle">
+
+    <ul id="menu-container">
+
+      <li class="dropdown">
+        <div><a href="#" class="dropdown-toggle">Features<i class="icon-arrow"><img src="icon-arrow-down.svg"
+                alt=""></i></a></div>
+        <ul class="dropdown-menu">
+          <li><img src="icon-todo.svg" alt=""> <a href="#">Todo List</a></li>
+          <li><img src="icon-calendar.svg" alt=""> <a href="#">Calendar</a></li>
+          <li><img src="icon-reminders.svg" alt=""> <a href="#">Reminders</a></li>
+          <li><img src="icon-planning.svg" alt=""> <a href="#">Planning</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <div><a href="#" class="dropdown-toggle">Company<i class="icon-arrow"><img src="icon-arrow-down.svg"
+                alt=""></i></a></div>
+        <ul class="dropdown-menu">
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+
+      </li>
+      <a href="#" class="dropdown-toggle">Careers<i class="icon-arrow"></i></a>
+      <a href="#" class="dropdown-toggle">About<i class="icon-arrow"></i></a>
+      </li>
+    </ul>
+    <div class="rejestr">
+      <div><a href="">Login</a></div>
+      <div><a id="register" href="">Register</a></div>
+    </div>
+
+
+  </nav>
+  <div id="przycisk"><img id="hamburger" src="icon-menu.svg" alt="">
+    <img id="iks" src="icon-close-menu.svg" alt="">
+  </div>
+
+
+
+  </ul>
+  <section>
+    <article>
+      <h1>Make remote work</h1>
+      <h2>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+        productivity soar.</h2>
+      <button id="learn">Learn more</button>
+      <div id="sponsors">
+        <img src="client-databiz.svg" alt="">
+        <img src="client-audiophile.svg" alt="">
+        <img src="client-meet.svg" alt="">
+        <img src="client-maker.svg" alt="">
+      </div>
+    </article>
+    <div id="hero">
+      <img id="duzy" src="image-hero-desktop.png" alt="">
+      <img id="maly" src="image-hero-mobile.png" alt="">
+    </div>
+  </section>
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
